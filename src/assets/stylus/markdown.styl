@@ -1,0 +1,70 @@
+@import './color.styl'
+
+inline-code($color = $color-theme)
+	display inline
+	padding 0 4px
+	border-radius 4px
+	background-color rgba($color, 0.1)
+	color $color
+.markdown-body
+	margin auto
+	padding 40px
+	max-width 1000px
+	color $color-text
+	code
+		baseScroll('dark')
+
+		font-family 'Consolas', 'Courier New', 'monospace', 'Microsoft Yahei'
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6
+		color $color-theme
+	h1
+		margin 35px auto
+		border none
+		&,
+		+h1
+			margin-top 40px
+	h2
+		position relative
+		margin 30px auto
+		font-size 24px
+		pointer-events none
+	h3
+		margin 30px 0
+		// font-weight 700
+		font-size 20px
+	pre
+		margin 20px auto
+		padding 20px
+		border-radius 2px
+		background-color #282c34
+		font-size 14px
+	p
+		line-height 1.8
+	p,
+	li,
+	table
+		color $color-text
+		code
+			inline-code()
+		tr
+			&:hover
+				background-color #FAFAFA
+		td
+			&:first-child
+				color $color-theme
+				font-weight 600
+	a
+		baseTrans()
+
+		margin 0 5px
+		color $color-theme !important
+		text-decoration none
+		cursor pointer
+		&:hover
+			color lighten($color-theme, 20%) !important
+			text-decoration underline

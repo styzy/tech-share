@@ -1,24 +1,23 @@
 # tech-share
 
-## Project setup
+> 技术分享
+
+## 安装
+
+为了保证依赖包的版本正确，请使用 `yarn` 命令进行安装。
+
 ```
-yarn install
+yarn
 ```
 
-### Compiles and hot-reloads for development
+## 开发模式
+
 ```
-yarn serve
+yarn dev
 ```
 
-### Compiles and minifies for production
+## 编译
+
 ```
 yarn build
 ```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
