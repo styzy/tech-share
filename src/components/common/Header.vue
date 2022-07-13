@@ -52,7 +52,7 @@ export default {
 		top 0
 		right 0
 		left 0
-		z-index 1
+		z-index 1000
 		height @height
 		.title,
 		.link,
@@ -76,6 +76,8 @@ export default {
 			font-size 30px
 			opacity 1
 			user-select none
+			&:hover
+				background-color rgba(255, 255, 255, 1)
 		.link
 			left - @width
 			z-index 2
