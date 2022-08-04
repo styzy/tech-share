@@ -5,6 +5,15 @@ Vue.use(VueRouter)
 
 const docRoutes = [
 	{
+		path: '/doc/vue2.createComponent',
+		component: () => import('@/views/doc/vue2.createComponent.md'),
+		props: true,
+		meta: {
+			title: 'Vue2组件封装技巧',
+			time: '2022-08-05'
+		}
+	},
+	{
 		path: '/doc/vue2.hidden.skills',
 		component: () => import('@/views/doc/vue2.hidden.skills.md'),
 		props: true,
